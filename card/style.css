@@ -13,11 +13,11 @@ main {
   height: 462px;
   border: #e8e8e8 1px solid;
   text-align: center;
+  padding: 60px 49px 49px 50px;
 }
 
 .card__title {
   font-size: 12px;
-  margin-top: 50px
 }
 
 .card__price {
@@ -31,14 +31,19 @@ main {
   font-size: 36px;
 }
 
-.card__description {
+.card-services {
   font-size: 12px;
   color: #454545;
   margin-top: 50px;
+  list-style: none;
+}
+
+.card-services li:not(:first-child) {
+  margin-top: 20px;
 }
 
 .card__button {
-  padding: 22px 38px;
+  padding: 21px 30px;
   border: #e8e8e8 2px solid;
   background-color: transparent;
   text-transform: uppercase;
