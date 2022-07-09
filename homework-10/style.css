@@ -1,29 +1,37 @@
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  font-family: Tahoma;
 
+}
+
+/* панель навигации */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1135px;
 }
 
 .header {
   background-color: #F1F1F1;
   padding: 21px 0;
   color: #202020;
-  width: 1367px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 116px;
+  width: 100%;
+  margin-bottom: 62px;
 }
 
 .logo {
+  border: 0;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -47,6 +55,97 @@ body {
   font-size: 14px;
 }
 
+/* главная часть */
 
+.hero__img {
+  height: 646px;
+  width: 461px;
+  margin-right: 120px;
+}
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 90px 0;
+}
 
+/* Автор и название */
+.main {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.name {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.subtitle {
+  max-width: 330px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: wrap;
+}
+
+/* Инфа по книге */
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__text {
+  font-size: 16px;
+  flex-basis: 41%;
+  margin: 6px 0;
+}
+
+.hero-shop {
+    display: flex;
+    align-items: center;
+}
+
+.shop__price {
+  font-size: 55px;
+  margin-right: 60px;
+}
+
+.shop__like {
+  border: none;
+  background-color: url;
+}
+
+.shop__add {
+  font-size: 16px;
+  order:center;
+}
+
+/* Кнопки */
+
+.buttons__read {
+
+  border: 2px solid #F89C02;
+  background-color: #F89C02;
+  height: 60px;
+  width: 250px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.buttons__buy {
+  border: 2px solid #F89C02;
+  background-color: transparent;
+  height: 60px;
+  width: 250px;
+  border-radius: 5px;
+  color: #F89C02
+}
