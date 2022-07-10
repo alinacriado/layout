@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #202020
 }
 
 main {
@@ -106,7 +107,7 @@ section {
 }
 
 .book-details__subtitle {
-  max-width: 330px;
+  max-width: 371px;
   font-size: 24px;
   display: flex;
   flex-direction: wrap;
@@ -159,6 +160,7 @@ section {
 
 .link {
   text-decoration: none;
+  color: #202020;
 }
 
 .link--button {
@@ -180,3 +182,95 @@ section {
   background-color: transparent;
   color: #F89C02;
 }
+
+.about-book {
+  background-color: #F1F1F1;
+  padding: 93px auto 95px;
+  width: 100%;
+}
+
+/* About book */
+
+.about-book-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 456px;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.section-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.book-info__text {
+  margin-bottom: 30px;
+}
+
+/* Author */
+
+.about-book-about-author {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 552px;
+  background-color: #fff;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #F3F3F3;
+  padding: 68px 58px 81px 54px;
+  align-items: center;
+  /* min-height: 347px; */
+}
+
+.about-author__photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 21px;
+}
+
+.about-author-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 217px;
+  align-items: center;
+}
+
+.about-author-info__name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-author__author-info {
+  margin-top: 24px;
+}
+
+/* Readers */
+
+.readers {
+  padding-top: 79px;
+}
+
+.readers_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.readers-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.readers-photos__avatar {
+  margin-bottom: 30px;
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}
+
+
+
