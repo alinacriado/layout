@@ -4,46 +4,61 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'exljbris - Museo Cyrl 900';
+  src: url(./exljbris+-+Museo+Cyrl+900.woff) format('woff'),
+    url(./exljbris+-+Museo+Cyrl+900.woff2) format('woff2');
+}
+
 body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: sans-serif;
-  font-family: Tahoma;
-
 }
 
 /* Site header */
+section {
+  width: 100%;
+  padding-top: 59px;
+  padding-bottom: 71px;
+}
 
 .container {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 100%; /* Правка */
   max-width: 1135px;
 }
 
 .header {
   background-color: #F1F1F1;
-  padding: 21px 0;
+  padding: 19px 0 23px;
   color: #202020;
   width: 100%;
-  margin-bottom: 62px;
 }
 
 .nav {
-  width: 530px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .logo {
+  display: inline-block;
   border: 0;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #202020;
 }
 
-ul {
+.nav ul {
   list-style-type: none;
   display: flex;
   min-width: 530px;
@@ -64,14 +79,13 @@ ul {
 }
 
 /* Main section */
-
-.hero__img {
+.book-details__img {
   height: 646px;
   width: 461px;
   margin-right: 120px;
 }
 
-.hero-text {
+.book-details-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,22 +94,18 @@ ul {
 }
 
 /* Author and title */
-.main {
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-}
-.name {
+.book-details__author {
   font-size: 24px;
 }
 
-.title {
+.book-details__title {
   font-size: 54px;
   font-weight: bold;
   margin: 10px 0;
+  font-family: 'exljbris - Museo Cyrl 900', serif;
 }
 
-.subtitle {
+.book-details__subtitle {
   max-width: 330px;
   font-size: 24px;
   display: flex;
@@ -104,59 +114,69 @@ ul {
 
 /*  Info about book */
 
-.info {
+.book-details-tags {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
-.info__text {
+.book-details-tags__tag {
   font-size: 16px;
   flex-basis: 41%;
   margin: 6px 0;
 }
 
-.hero-shop {
-    display: flex;
-    align-items: center;
+.book-details-shop {
+  display: flex;
+  align-items: center;
 }
 
-.shop__price {
+.book-details-shop__price {
   font-size: 55px;
   margin-right: 60px;
 }
 
-.shop__like {
+.book-details-shop__favourite {
+  display: flex;
+  align-items: center;
   border: none;
   background-color: url;
   cursor: pointer;
   margin-left: 30px;
+  font-size: 16px;
+  order: center;
+  background-color: transparent;
 }
 
-.shop__add {
-  font-size: 16px;
-  order:center;
+.book-details-shop__favourite img {
+  margin-right: 7px;
 }
 
 /* Кнопки */
-
-.buttons__read {
-  text-decoration: none;
-  border: 2px solid #F89C02;
-  background-color: #F89C02;
-  padding: 20px 69px;
-  border-radius: 5px;
+.book-details-links .link:first-child {
   margin-right: 20px;
-  font-size: 16px;
-  color: white;
-  display: inline-block;
 }
 
-.buttons__buy {
+.link {
   text-decoration: none;
-  border: 2px solid #F89C02;
-  background-color: transparent;
+}
+
+.link--button {
+  display: inline-block;
   padding: 20px 69px;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link--button-filled {
+  border: 2px solid #F89C02;
+  background-color: #F89C02;
+  color: white;
+}
+
+.link--button-outline {
+  border: 2px solid #F89C02;
+  background-color: transparent;
   color: #F89C02;
-  display: inline-block;
 }

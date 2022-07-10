@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site for book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link 
+      rel="preconnect" href="https://fonts.gstatic.com" crossorigin 
+    />
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" 
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <!-- Site header -->
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <span class="logo">КНИЖНЫЙ</span>
+          <a href="/" class="logo">КНИЖНЫЙ</a>
           <ul>
             <li><a href="#" class="nav__link">Бестселлеры</a></li>
             <li><a href="#" class="nav__link">Подборки</a></li>
@@ -27,41 +35,46 @@
       </div>
     </header>
     <!-- Main section -->
-    <section class="hero">
-      <div class="container">
-        <!-- Author and title -->
-        <img src="book.png" alt="Книга путь фрилансера" class="hero__img">
-        <div class="hero-text">
-          <div class="main">
-            <span class="name">Артем Исламов</span>
-            <h1 class="title">Путь фрилансера</h1>
-            <span class="subtitle">
-              Поколение людей, работающих в интернете</span>
-          </div>
-          <!-- Info about book -->
-          <div class="info">
-            <span class="info__text date">Год выпуска: 2019</span>
-            <span class="info__text format">Формат издания: 145х2015</span>
-            <span class="info__text type">Тип обложки: мягкая</span>
-            <span class="info__text age">Возрастные ограничения: 12+</span>
-          </div>
-          <div class="hero-shop">
-            <span class="shop__price">490 ₽ </span>
-            <button type="button" class="shop__like">
-              <img src="love-and-romance.png" alt="like">
-            </button>
-            <span class="shop__add">Добавить в избранное </span>
-          </div>
-          <div class="buttons">
-            <a href="#" class="buttons__read">
-              Читать отрывок
-            </a>
-            <a href="#" class="buttons__buy">
-              Купить книгу
-            </a>
+    <main>
+      <section class="book-details">
+        <div class="container">
+          <!-- Author and title -->
+          <img src="book.png" alt="Книга путь фрилансера" class="book-details__img">
+          <div class="book-details-info">
+            <div>
+              <span class="book-details__author">Артем Исламов</span>
+              <h1 class="book-details__title">Путь фрилансера</h1>
+              <span class="book-details__subtitle">
+                Поколение людей, работающих в интернете
+              </span>
+            </div>
+            <!-- Info about book -->
+            <ul class="book-details-tags">
+              <li class="book-details-tags__tag">Год выпуска: 2019</li>
+              <li class="book-details-tags__tag">
+                Формат издания: 145х2015
+              </li>
+              <li class="book-details-tags__tag">Тип обложки: мягкая</li>
+              <li class="book-details-tags__tag">Возрастные ограничения: 12+</li>
+            </ul>
+            <div class="book-details-shop">
+              <span class="book-details-shop__price">490 ₽ </span>
+              <button type="button" class="book-details-shop__favourite">
+                <img src="love-and-romance.png" alt="like">
+                <span>Добавить в избранное </span>
+              </button>
+            </div>
+            <div class="book-details-links">
+              <a href="#" class="link link--button link--button-filled">
+                Читать отрывок
+              </a>
+              <a href="#" class="link link--button link--button-outline">
+                Купить книгу
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
