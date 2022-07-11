@@ -183,6 +183,11 @@ section {
   color: #F89C02;
 }
 
+.about-book-container {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about-book {
   background-color: #F1F1F1;
   padding: 93px auto 95px;
