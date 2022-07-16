@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  background-color: Green;
+}/*# sourceMappingURL=style.css.map */
