@@ -58,9 +58,10 @@
     }
   }
   .stars {
-    flex-basis: content;
+    flex-basis: auto;
   }
   .hotel {
+    padding-top: 0;
     &-name {
       flex-basis: 100%;
     }
@@ -85,5 +86,11 @@
 @media ( max-width: 576px ) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 278px;
   }
 }
